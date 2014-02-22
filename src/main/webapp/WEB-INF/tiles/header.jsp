@@ -2,6 +2,7 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="security"%>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags"%>
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
@@ -16,13 +17,15 @@
 
 			<security:authorize access="isAuthenticated()">
 				<ul class="nav navbar-nav">
-					<li class=""><a href='<c:url value="/"/>'><span
-							class="glyphicon glyphicon-home" style="color: white;"> </span> <s:message
-								code="menu.home" text="Home" /></a></li>
-					<li class=""><a href='<c:url value="/cars"/>'"><s:message
-								code="menu.car" text="Cars" /></a></li>
-					<li class=""><a href='<c:url value="/Income"/>'"><s:message
-								code="menu.income" text="Income" /></a></li>
+					<li class=""><a href='<c:url value="/Income"/>'"><t:glyph
+								image="incomes" /> <s:message code="menu.incomes" text="Incomes" /></a></li>
+					<li class=""><a href='<c:url value="/outcome"/>'"><t:glyph
+								image="expenses" /> <s:message code="menu.espenses"
+								text="Expenses" /></a></li>
+					<li class=""><a href='<c:url value="/cars"/>'"><t:glyph
+								image="cars" /> <s:message code="menu.car" text="Cars" /></a></li>
+					<li class=""><a href='<c:url value="/media"/>'"><t:glyph
+								image="media" /> <s:message code="menu.media" text="media" /></a></li>
 				</ul>
 			</security:authorize>
 			<ul class="nav navbar-nav navbar-right">
