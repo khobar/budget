@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
-
+<div style="margin-left: 30%; width:50%" class="group-blue">
 <form class="form" action='<s:url value="/j_spring_security_check"/>' method="post">
 	<h2 class="form-heading">Please Sign In</h2>
 	<c:if test="${not empty param['error']}">
@@ -15,5 +15,5 @@
 	</label>
 	<button class="btn btn-lg btn-primary" type="submit">Sign In</button>
 	<p class="form-text">New here? <a href='<s:url value="/signup"/>'>Sign Up.</a></p>
-	<p class="form-text">Forgot your password? <a href='<s:url value="/passrecovery"/>'>Recover password.</a></p>
 </form>
+</div>

@@ -2,6 +2,7 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
+<div style="margin-left: 30%; width:50%" class="group-blue">
 <form:form class="form" method="post" modelAttribute="signupForm">
 	<h2 class="form-heading">Please Sign Up</h2>
 	<form:errors path="" element="p" class="text-danger" />
@@ -32,3 +33,4 @@
 			In</a>
 	</p>
 </form:form>
+</div>

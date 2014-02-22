@@ -12,7 +12,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet" media="screen" />
 	<link href="<c:url value="/resources/css/core.css" />" rel="stylesheet" media="screen" />
-	<link rel="icon" type="image/png" href="/idea/resources/img/favicon.png"/>
+	<link rel="icon" type="image/png" href="<c:url value="/resources/images/favicon.png" />"/>
 	<tilesx:useAttribute id="styles" name="styles" classname="java.util.List" ignore="true" />
 	<c:forEach var="cssName" items="${styles}">
 		<link type="text/css" href="<c:url value="/resources/css/${cssName}"/>" rel="stylesheet" media="screen" />
@@ -27,8 +27,6 @@
 <body>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
-    <script src="<c:url value="/resources/js/scripts.js" />"></script>
-    <script src="<c:url value="/resources/js/bootbox.min.js" />"></script>
 	<tiles:insertAttribute name="header"  defaultValue="" />
 	<!-- Page content -->
 	<div class="container">
