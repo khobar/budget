@@ -14,7 +14,6 @@
 			<a class="navbar-brand" href='<c:url value="/"/>'>Home Budget</a>
 		</div>
 		<div class="navbar-collapse collapse">
-
 			<security:authorize access="isAuthenticated()">
 				<ul class="nav navbar-nav">
 					<li class=""><a href='<c:url value="/Income"/>'"><t:glyph
@@ -34,7 +33,6 @@
 							class="glyphicon glyphicon-wrench" style="color: white;">
 						</span> <s:message code="main.adminPanel" text="Admin Panel" /></a></li>
 				</security:authorize>
-
 				<security:authorize access="!isAuthenticated()">
 					<li><a href='<s:url value="/signin"></s:url>'>Sign in</a></li>
 				</security:authorize>

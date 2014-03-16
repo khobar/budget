@@ -7,7 +7,6 @@
 		<put-attribute name="body" value="/WEB-INF/views/{1}/{2}.jsp"></put-attribute>
 		<put-list-attribute name="styles">
 			<add-attribute value="bootstrap.min.css" />
-			<add-attribute value="signin.css" />
 		</put-list-attribute>
 	</definition>
 
@@ -15,7 +14,6 @@
 		<put-attribute name="body" value="/WEB-INF/views/{1}.jsp"></put-attribute>
 		<put-list-attribute name="styles">
 			<add-attribute value="bootstrap.min.css" />
-			<add-attribute value="signin.css" />
 		</put-list-attribute>
 	</definition>
 
