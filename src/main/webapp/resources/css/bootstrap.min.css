@@ -7276,3 +7276,11 @@ th.hidden-lg,td.hidden-lg {
 .flag.flag-pl {
 	background-position: -18px -12px
 }
+.tags{
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 2px;
+    margin-left: 2px;
+    background: cornflowerblue;
+    color: white;
+}

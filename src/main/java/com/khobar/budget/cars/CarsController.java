@@ -33,6 +33,7 @@ public class CarsController {
 	
 	@RequestMapping(value = "/cars", method = RequestMethod.POST)
 	public String getCars(@RequestParam(value="list_cars")String[] carArray,
+			@RequestParam(value="cars_list")String car,
 			Model model) {
 		
 		System.out.println(carArray);
